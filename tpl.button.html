@@ -10,7 +10,7 @@
 	<% supported_with_upgrade %>
 	<div class="caniuse-ico caniuse-ico-<%= browserid %>"></div>
 	<div class="caniuse-msg">
-		<h6>This demo is not fully supported.</h6>
+		<h6>This page is not fully supported.</h6>
 		<p><a class="caniuse-url" href="<%= browserurl %>" rel="external" target="_blank">Please update to the latest version of your browser.</a></p>
 	</div>
 	<% /supported_with_upgrade %>
@@ -18,7 +18,7 @@
 	<% unsupported %>
 	<div class="caniuse-ico"></div>
 	<div class="caniuse-msg">
-		<h6>This demo is not fully supported.</h6>
+		<h6>This page is not fully supported.</h6>
 		<p>Please upgrade to one of the following browsers.</p>
 	</div>
 	<% /unsupported %>
@@ -35,9 +35,9 @@
 		</div>
 		<% /supported_with_upgrade %>
 		<div class="caniuse-features">
-			<h6>
+			<b>
 				Requested features
-			</h6>
+			</b>
 
 			<%= features %>
 		</div>

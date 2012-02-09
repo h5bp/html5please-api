@@ -306,6 +306,11 @@ function html_encode_agent(&$agent_string = '', &$agent_array, $requested_style_
 	if ($requested_style_string !== 'icon') {
 		$html .= '<span class="caniuse-agt-ttl">' . @$agent_array['name'] . '</span>';
 	}
+	
+	if ($requested_style_string === 'button') {
+        	$html .= '<span class="caniuse-agt-txt">[Download]</span>';    
+   	}
+
 
 	$html .= '</a>';
 
