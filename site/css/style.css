@@ -353,6 +353,20 @@ a {
 label[for='features'] {
   display: block; }
 
+.preview {
+  display:none;
+}
+
+.preview .response{
+  white-space: pre; 
+  word-break: break-word; 
+  min-height:50px;
+  max-height:300px;
+  overflow-y:scroll;
+  margin-bottom:10px;
+}
+
+
 .help {
   font-size: small;
   text-align: center;
