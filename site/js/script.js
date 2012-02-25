@@ -1,6 +1,7 @@
-      var $url = $('#url'),
+    var $url = $('#url'),
          $features = $('#features'),
          $options = $('#get-api').find('input'),
+         $preview = $('.preview'),
          $callback = '?callback=caniuse&';
 
 
@@ -98,10 +99,24 @@
          if(api.features !== '') {
            api.options = $callback + formattedOptions();
           
-           $url.text(createUrl());
+           $createdUrl = createUrl();
+           $url.text($createdUrl);
            $url.attr('href', $url.text());
+           getPreview($createdUrl);
          }
       };
+
+      window.caniuse = function(data) {   
+          $preview
+            .show()
+            .find('.response')
+            .html("<h3>Output Preview</h3>" + JSON.stringify(data, null, '\t'));
+      }
+
+ 
+      function getPreview( url ){
+        $('.placeholder').html( $('<script/>').attr('src', url));
+      }
 
       function createUrl() {
         return Object.keys(api).map(function(key) { 
