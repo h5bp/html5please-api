@@ -55,7 +55,16 @@
             this.value = terms.join(' ');
             api.features = this.value.trim().split(' ').join('+').trim();
             refreshOutput();
+            // Save the select state for use in the close event, which is called
+            // after the menu is closed, and therefore can't be prevented.
+            $( this ).data( 'selected', true );
             return false;
+          },
+          close: function( event, ui ) {
+            var $this = $( this );
+            if ( $this.data('selected') ) {
+              $this.data( 'selected', false ).focus();
+            }
           }
         })
         .focus(function() {
