@@ -392,6 +392,19 @@ label[for='features'] {
   .formats input[type="radio"]:focus + label {
     background: #5c5a72; }
 
+
+.preview {
+  display:none;
+}
+
+.preview .response{
+  white-space: pre; 
+  word-break: break-word; 
+  min-height:50px;
+  max-height:300px;
+  overflow-y:scroll;
+}
+
 .help {
   font-size: small;
   text-align: center;

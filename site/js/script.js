@@ -5,6 +5,7 @@
          $callbackvalue = $('#callbackvalue'),
          $callback = $('#callback'),
          $jsonhelp = $('.js-help-json'),
+         $preview = $('.preview'),
          originalCallbackValue = '',
          lastActive = false;
 
@@ -124,16 +125,35 @@
          if(api.features !== '') {
            api.options = formattedOptions();
           
-           $url.text(createUrl());
+           $createdUrl = createUrl();
+           $url.text($createdUrl);
            $url.attr('href', $url.text());
+           
 
            if(api.format == 'json') {
              $jsonhelp.show();
+              getPreview($createdUrl);
+              $preview.show();
            } else {
              $jsonhelp.hide();
+             $preview.hide();
            }
          }
       };
+
+
+      window.browserSupport = function(data) {   
+        if(api.format == 'json'){
+          $preview.find('.response').html("<h2>JSON</h2>" + JSON.stringify(data, null, '\t'));
+        }else{
+          //$preview.find('.response').html("<h2>HTML</h2>" + data.html);
+        }
+      }
+
+      function getPreview( url ){
+        $('.placeholder').html( $('<script/>').attr('src', url));
+
+      }
 
       function createUrl() {
         return Object.keys(api).map(function(key) { 
