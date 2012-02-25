@@ -575,6 +575,126 @@ footer {
   html {
     font-size: 12px;
   }
+  
+  body {
+    padding: 0 1em;
+  }
+  
+  section {
+    padding-top: 2em;
+  }
+  
+  h2 {
+    @include remfallback('font-size', 1.3);
+  }
+  
+  h3 {
+    @include remfallback('font-size', 1.2);
+  }
+
+
+  // Headline
+  .logo {
+    margin-top: 1.5em;
+    line-height: 1.1;
+
+    b {
+      @include remfallback('font-size', 2.5);
+      
+      &::before,
+      &::after {
+        content: '';
+        padding-left: 0.15em;
+      }
+    }
+    
+    i {
+      @include remfallback('font-size', 1.2);
+    }
+  }
+  
+  
+  
+  // Naviagtion
+  #toc {
+    &.sticky {
+      position: static;
+    }
+
+    a {
+      padding: .3em 0;
+      
+      + a:before {
+        content: "✶";
+      }
+      
+      &:before {
+        padding-right: .8em;
+      }
+    }
+  }
+  
+  #nav_container {
+    height: auto !important;
+  }
+  
+  
+  #about {
+    padding-top: 1em;
+  }
+  
+  
+  
+  #in-action {
+    h3 {
+      @include remfallback('font-size', 1.2);
+      @include remfallback('margin-top', 1);
+    }
+    
+    figure {
+      margin: 0;
+      padding: 1em .5em;
+      vertical-align: top;
+    }
+  }
+
+  
+  #features,
+  #callbackvalue {
+    font-size: 16px;
+  }
+
+
+
+  // Footer  
+  footer {
+    .builders {
+      h3 {
+        display: block;
+        text-align: center;
+        margin-bottom: .5em;
+      }
+      
+      &:first-child {
+        a {
+          @include remfallback('font-size', 1.2);
+          text-align: center;
+          
+          b {
+            display: inline;
+          }
+        }
+      } 
+    
+      > a {
+        width: auto;
+        
+        img {
+          margin-bottom: .5em;
+        }
+      }
+    }
+  }
 
 }
 

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* normalize.css 2011-07-06T20:20 UTC //github.com/jonathantneal/normalize.css */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block; }
@@ -536,7 +535,78 @@ footer {
 
 @media (max-width: 480px) {
   html {
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  body {
+    padding: 0 1em; }
+
+  section {
+    padding-top: 2em; }
+
+  h2 {
+    font-size: 20.8px;
+    font-size: 1.3rem; }
+
+  h3 {
+    font-size: 19.2px;
+    font-size: 1.2rem; }
+
+  .logo {
+    margin-top: 1.5em;
+    line-height: 1.1; }
+    .logo b {
+      font-size: 40px;
+      font-size: 2.5rem; }
+      .logo b::before, .logo b::after {
+        content: '';
+        padding-left: 0.15em; }
+    .logo i {
+      font-size: 19.2px;
+      font-size: 1.2rem; }
+
+  #toc.sticky {
+    position: static; }
+  #toc a {
+    padding: .3em 0; }
+    #toc a + a:before {
+      content: "✶"; }
+    #toc a:before {
+      padding-right: .8em; }
+
+  #nav_container {
+    height: auto !important; }
+
+  #about {
+    padding-top: 1em; }
+
+  #in-action h3 {
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    margin-top: 16px;
+    margin-top: 1rem; }
+  #in-action figure {
+    margin: 0;
+    padding: 1em .5em;
+    vertical-align: top; }
+
+  #features,
+  #callbackvalue {
+    font-size: 16px; }
+
+  footer .builders h3 {
+    display: block;
+    text-align: center;
+    margin-bottom: .5em; }
+  footer .builders:first-child a {
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    text-align: center; }
+    footer .builders:first-child a b {
+      display: inline; }
+  footer .builders > a {
+    width: auto; }
+    footer .builders > a img {
+      margin-bottom: .5em; } }
 /*
  * jQuery UI CSS Framework 1.8.17
  *
