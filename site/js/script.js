@@ -28,6 +28,12 @@
         function extractLast( term ) {
           return split( term ).pop();
         }
+        function getUnusedKeywords( val ) {
+          var terms = split( val );
+          return $.grep( keywords, function( elem ) {
+            return $.inArray( elem, terms ) === -1;
+          });
+        }
 
         $features
         .bind( "keydown", function( event ) {
@@ -40,7 +46,7 @@
           minLength: 0,
           source: function( request, response ) {
             response( $.ui.autocomplete.filter(
-              keywords, extractLast( request.term ) ) );
+              getUnusedKeywords( this.element[0].value ), extractLast( request.term ) ) );
           },
           focus: function() {
             return false;
