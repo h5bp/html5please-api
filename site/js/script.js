@@ -17,13 +17,13 @@
          },
          jscontent = {
            prefix: '&lt;div id="h5p-message">&lt;/div>&lt;script>function stripScripts(a){var b=document.createElement("div");b.innerHTML=a;var c=b.getElementsByTagName("script");while(c.length){var d=c[0];d.parentNode.removeChild(d)}return b.innerHTML}var x=document.getElementById("h5p-message");window.h5pCaniuse=function(a){x.innerHTML=stripScripts(a.html)}&lt;/script>&lt;script src="',
-           suffix: '&lt;script>',
+           suffix: '&lt;/script>',
            message: 'For better performance, make sure you test for these features before invoking the widget'
          },
 
          modernizrcontent = {
            prefix: '&lt;div id="h5p-message">&lt;/div>&lt;script>Modernizr.browserPrompt=function(a,b){if(a.agents){Modernizr.browserPrompt.cb(a);return}var c=!0,d=a.features.split(" "),e=a.options,f;for(var g=-1,h=d.length;++g&lt;h;)f=d[g],Modernizr[f]===!1&&(c=!1);if(c)return c;var i=document.createElement("script"),j=document.getElementsByTagName("script")[0],k="http://api.html5please.com/"+d.join("+")+".json?callback=Modernizr.browserPrompt&html&"+e;return Modernizr.browserPrompt.cb=b,i.src=k,j.parentNode.insertBefore(i,j),!1},Modernizr.browserPrompt({',
-           suffix: '},function(a){var b=document.getElementById("h5p-message"),c=document.createElement("div");c.innerHTML=a.html;var d=c.getElementsByTagName("script");while(d.length){var e=d[0];e.parentNode.removeChild(e)}b.innerHTML=c.innerHTML})&lt;script>',
+           suffix: '},function(a){var b=document.getElementById("h5p-message"),c=document.createElement("div");c.innerHTML=a.html;var d=c.getElementsByTagName("script");while(d.length){var e=d[0];e.parentNode.removeChild(e)}b.innerHTML=c.innerHTML})&lt;/script>',
            message: 'Make sure you include <a href="http://modernizr.com">modernizr</a> inside the head tag of your markup'
           };
 
