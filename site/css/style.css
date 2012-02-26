@@ -269,11 +269,11 @@ a {
   text-shadow: black 2px 2px 1px, #b5abed 3px 3px 1px;
   color: #a55f8f; }
   .logo b::before, .logo b::after {
-    content: "❧";
+    content: "\2767";
     text-shadow: 1px 1px 1px #000;
     padding-left: 0.15em; }
   .logo b::before {
-    content: "☙"; }
+    content: "\2619"; }
 .logo i {
   text-shadow: #060231 2px 2px 1px;
   display: block;
@@ -359,7 +359,8 @@ a {
   display: block;
   width: 100%;
   padding: 1rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  font-style: italic; }
 
 label[for='features'] {
   margin-top: 1em;
@@ -450,7 +451,8 @@ input[type="checkbox"] {
   padding: 1em;
   word-wrap: break-word;
   text-align: left;
-  min-height: 12em; }
+  min-height: 12em;
+  font-size: 16px; }
   #widget a {
     color: #060231;
     display: block; }

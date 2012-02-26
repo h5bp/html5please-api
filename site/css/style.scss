@@ -216,13 +216,13 @@ a { color: $linkcolor; text-decoration: none; }
 
     &::before,
     &::after {
-      content: "❧";
+      content: "\2767";
       text-shadow: 1px 1px 1px #000 ;
       padding-left: 0.15em;
     }
 
     &::before {
-      content: "☙";
+      content: "\2619";
     }
   }
 
@@ -329,10 +329,11 @@ a { color: $linkcolor; text-decoration: none; }
 
 #features { 
   @extend .normal-font-size;
-  display: block; 
+  display: block;
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
+  font-style: italic;
 }
 
 
@@ -444,6 +445,7 @@ input[type="text"] { @extend .input-text; }
   word-wrap: break-word;
   text-align: left;
   min-height: 12em;
+  font-size: 16px;
 
   a {
     color: $bgcolor;
