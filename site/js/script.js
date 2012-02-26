@@ -22,7 +22,7 @@
          },
 
          modernizrcontent = {
-           prefix: '&lt;div id="h5p-message">&lt;/div>&lt;script>Modernizr.browserPrompt=function(a,b){if(a.agents){Modernizr.browserPrompt.cb(a);return}var c=!0,d=a.features.split(" "),e=a.options,f;for(var g=-1,h=d.length;++g&lt;h;)f=d[g],Modernizr[f]===!1&&(c=!1);if(c)return c;var i=document.createElement("script"),j=document.getElementsByTagName("script")[0],k="http://api.html5please.com/"+d.join("+")+".json?callback=Modernizr.browserPrompt&html&"+e;return Modernizr.browserPrompt.cb=b,i.src=k,j.parentNode.insertBefore(i,j),!1},Modernizr.browserPrompt({',
+           prefix: '&lt;div id="h5p-message">&lt;/div>&lt;script>Modernizr.browserPrompt=function(a,b){if(a.agents){Modernizr.browserPrompt.cb(a);return}var c=!0,d=a.features.split(" "),e=a.options,f;for(var g=-1,h=d.length;++g&lt;h;)f=d[g],!Modernizr[f]&&(c=!1);if(c)return c;var i=document.createElement("script"),j=document.getElementsByTagName("script")[0],k="http://api.html5please.com/"+d.join("+")+".json?callback=Modernizr.browserPrompt&html&"+e;return Modernizr.browserPrompt.cb=b,i.src=k,j.parentNode.insertBefore(i,j),!1},Modernizr.browserPrompt({',
            suffix: '},function(a){var b=document.getElementById("h5p-message");b.innerHTML=a.html})&lt;/script>',
            message: 'Make sure you include <a href="http://modernizr.com">modernizr</a> inside the head tag of your markup'
           };
