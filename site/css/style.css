@@ -536,7 +536,7 @@ footer {
     padding: 0 1em; }
 
   section {
-    padding-top: 2em; }
+    padding-top: 1em; }
 
   h2 {
     font-size: 20.8px;
@@ -563,10 +563,8 @@ footer {
     position: static; }
   #toc a {
     padding: .3em 0; }
-    #toc a + a:before {
+    #toc a:not(:first-of-type):nth-of-type(odd)::before, #toc a:nth-of-type(odd)::after {
       content: "✶"; }
-    #toc a:before {
-      padding-right: .8em; }
 
   #nav_container {
     height: auto !important; }
@@ -587,6 +585,10 @@ footer {
   #features {
     font-size: 16px; }
 
+  #get-api h3 {
+    font-size: 16px;
+    font-size: 1rem; }
+
   footer .builders h3 {
     display: block;
     text-align: center;
@@ -598,7 +600,8 @@ footer {
     footer .builders:first-child a b {
       display: inline; }
   footer .builders > a {
-    width: auto; }
+    width: auto;
+    margin-right: 1em; }
     footer .builders > a img {
       margin-bottom: .5em; } }
 /*

@@ -233,7 +233,7 @@
 
       if($scrollable.scrollTop() > ($originalnavtop)) {
         $toc.addClass('sticky').css('top', '0');
-        $stickynavheight = $toc.outerHeight();
+        $stickynavheight = ($(window).width() < 480) ? 0 : $toc.outerHeight();
       } else {
         $toc.removeClass('sticky');
       }
