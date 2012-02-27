@@ -28,6 +28,18 @@
           };
 
 
+
+
+    // trim polyfill - https://gist.github.com/1035982
+    ''.trim||(String.prototype.trim=function(){return this.replace(/^[\s\uFEFF]+|[\s\uFEFF]+$/g,'')})
+
+    // Object.keys polyfill - https://gist.github.com/1034464
+    Object.keys=Object.keys||function(o,k,r){r=[];for(k in o)r.hasOwnProperty.call(o,k)&&r.push(k);return r};
+    
+    // Array.map polyfill - https://gist.github.com/1031568
+    [].map||(Array.prototype.map=function(a){for(var b=this,c=b.length,d=[],e=0,f;e<b;)d[e]=e in b?a.call(arguments[1],b[e],e++,b):f;return d});
+
+
      var api = {
           'domain': 'http://api.html5please.com/',
           'features': '',
