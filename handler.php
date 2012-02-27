@@ -87,7 +87,10 @@ if(!empty($support_array['results']) && !empty($support_array['agents'])) {
     $string = xml_encode($support_array);
   }
 } else {
-  $support_array = array('supported' => 'unknown');
+  $support_array = array(
+    'supported' => 'unknown',
+    'html' => ''
+  );
   if($option_format === 'xml') {
     $string = xml_encode($support_array);
   } else if ($option_format === 'html') {

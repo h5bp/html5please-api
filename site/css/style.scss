@@ -444,8 +444,9 @@ input[type="text"] { @extend .input-text; }
   padding: 1em;
   word-wrap: break-word;
   text-align: left;
-  min-height: 12em;
+  min-height: 2em;
   font-size: 16px;
+  white-space: pre-wrap;
 
   a {
     color: $bgcolor;
@@ -502,6 +503,7 @@ input[type="text"] { @extend .input-text; }
 }
 
 #how-does-it-work {
+
   h4 {
     @extend .align-center;
     margin-top: 2em;
