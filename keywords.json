@@ -108,7 +108,7 @@
 	"script-defer": "scriptdefer",
 	"nav-timing": "navtiming",
 	"audio-api": "audioapi",
-	"css-regions": "region cssregions",
+	"css-regions": "region cssregions regions",
 	"fullscreen": "fullscreen",
 	"requestanimationframe": "requestanimationframe raf",
 	"matchmedia": "matchmedia"
