@@ -37,7 +37,7 @@
 		"type": "desktop",
 		"url": "http:\/\/www.opera.com\/",
 		"sniffer": "/opera[\\W\\w]*?version\\/([\\d\\.]+)|opera[\\W\\w]*?([\\d\\.]+)/i",
-		"currentVersion": "11.6"
+		"currentVersion": "11.61"
 	},
 	"ios_saf": {
 		"name": "iOS Safari",
@@ -53,7 +53,7 @@
 		"type": "mobile",
 		"url": "http:\/\/www.opera.com\/mobile\/",
 		"sniffer": "/opera\\s*mobi[\\W\\w]*?version\\/([\\d\\.]+)/i",
-		"currentVersion": "5.0-6.0"
+		"currentVersion": "7"
 	},
 	"op_mob": {
 		"name": "Opera Mobile",
@@ -61,7 +61,7 @@
 		"type": "mobile",
 		"url": "http:\/\/www.opera.com\/mobile\/",
 		"sniffer": "/opera\\s*mini[\\W\\w]*?version\\/([\\d\\.]+)/i",
-		"currentVersion": "11.5"
+		"currentVersion": "12"
 	},
 	"android": {
 		"name": "Android Browser",
