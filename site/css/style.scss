@@ -44,12 +44,12 @@ $minorfocuscolor: hsl(61, 57%, 38%);
 }
 
 @mixin colorize($image, $color, $opacity) {
-  background: $color;
+  background: $color url($image);
   $color: transparentize($color, 1 - $opacity);
-  background: -webkit-linear-gradient(left, $color, $color), url($image); 
+  background: -webkit-linear-gradient(left, $color, $color), url($image);
   background: -moz-linear-gradient(left, $color, $color), url($image); 
   background: -ms-linear-gradient(left, $color, $color), url($image); 
-  background: -o-linear-gradient(left, $color, $color), url($image); 
+  background: -o-linear-gradient(left, $color, $color), url($image);
 }
 
 @mixin remfallback($property, $value) {

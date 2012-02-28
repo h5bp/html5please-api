@@ -195,7 +195,7 @@ table {
   box-sizing: border-box; }
 
 html {
-  background: #060231;
+  background: #060231 url("../classy_fabric.png");
   background: -webkit-linear-gradient(left, rgba(6, 2, 49, 0.2), rgba(6, 2, 49, 0.2)), url("../classy_fabric.png");
   background: -moz-linear-gradient(left, rgba(6, 2, 49, 0.2), rgba(6, 2, 49, 0.2)), url("../classy_fabric.png");
   background: -ms-linear-gradient(left, rgba(6, 2, 49, 0.2), rgba(6, 2, 49, 0.2)), url("../classy_fabric.png");
@@ -288,7 +288,7 @@ a {
 
 #toc {
   width: 100%;
-  background: #060231;
+  background: #060231 url("../classy_fabric.png");
   background: -webkit-linear-gradient(left, rgba(6, 2, 49, 0.2), rgba(6, 2, 49, 0.2)), url("../classy_fabric.png");
   background: -moz-linear-gradient(left, rgba(6, 2, 49, 0.2), rgba(6, 2, 49, 0.2)), url("../classy_fabric.png");
   background: -ms-linear-gradient(left, rgba(6, 2, 49, 0.2), rgba(6, 2, 49, 0.2)), url("../classy_fabric.png");
@@ -307,7 +307,7 @@ a {
     #toc a.active {
       color: #dabed1; }
   #toc.sticky {
-    background: black;
+    background: black url("../classy_fabric.png");
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../classy_fabric.png");
     background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../classy_fabric.png");
     background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../classy_fabric.png");
