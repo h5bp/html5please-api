@@ -546,7 +546,7 @@ footer {
     }
     > a {
       width: 9em;
-      margin-bottom: 1em;
+      margin: 0 .5em 1em 0;
       img {
         float: left;
         margin-right: 0.5em;
@@ -686,7 +686,6 @@ footer {
     
       > a {
         width: auto;
-        margin-right: 1em;
         
         img {
           margin-bottom: .5em;

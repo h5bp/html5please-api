@@ -514,7 +514,7 @@ footer {
       vertical-align: 0.5rem; }
     footer .builders > a {
       width: 9em;
-      margin-bottom: 1em; }
+      margin: 0 .5em 1em 0; }
       footer .builders > a img {
         float: left;
         margin-right: 0.5em; }
@@ -597,8 +597,7 @@ footer {
     footer .builders:first-child a b {
       display: inline; }
   footer .builders > a {
-    width: auto;
-    margin-right: 1em; }
+    width: auto; }
     footer .builders > a img {
       margin-bottom: .5em; } }
 /*
