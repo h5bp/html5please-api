@@ -52,7 +52,7 @@
 		"prefix": "o",
 		"type": "mobile",
 		"url": "http:\/\/www.opera.com\/mobile\/",
-		"sniffer": "/opera\\s*mobi[\\W\\w]*?version\\/([\\d\\.]+)/i",
+		"sniffer": "/opera\\s*mini[\\W\\w]*?version\\/([\\d\\.]+)/i",
 		"currentVersion": "7"
 	},
 	"op_mob": {
@@ -60,7 +60,7 @@
 		"prefix": "o",
 		"type": "mobile",
 		"url": "http:\/\/www.opera.com\/mobile\/",
-		"sniffer": "/opera\\s*mini[\\W\\w]*?version\\/([\\d\\.]+)/i",
+		"sniffer": "/opera\\s*mobi[\\W\\w]*?version\\/([\\d\\.]+)/i",
 		"currentVersion": "12"
 	},
 	"android": {

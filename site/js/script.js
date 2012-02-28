@@ -17,7 +17,7 @@
          },
          jscontent = {
            prefix: '&lt;div id="h5p-message">&lt;/div>\n'+
-            '&lt;script async>window.h5please=function(a){ document.getElementById("h5p-message").innerHTML=a.html }&lt;/script>\n&lt;script async src="',
+            '&lt;script>window.h5please=function(a){ document.getElementById("h5p-message").innerHTML=a.html }&lt;/script>\n&lt;script async src="',
            suffix: '">&lt;/script>',
            message: 'For better performance, make sure you test for these features before invoking the widget'
          },
