@@ -329,8 +329,8 @@ a {
     width: 50%;
     display: inline-block;
     white-space: normal;
-    margin: 1em 0.5em 0 0.5em;
-    padding: 0; }
+    padding: 1em .5em 0;
+    margin: 0; }
     #in-action figure img {
       display: block;
       padding: 0.2em;
@@ -577,8 +577,6 @@ footer {
     margin-top: 16px;
     margin-top: 1rem; }
   #in-action figure {
-    margin: 0;
-    padding: 1em .5em;
     vertical-align: top; }
 
   #features {

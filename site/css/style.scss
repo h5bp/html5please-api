@@ -291,7 +291,7 @@ a { color: $linkcolor; text-decoration: none; }
     width: 50%;
     display: inline-block;
     white-space: normal;
-    margin: 1em 0.5em 0 0.5em; padding: 0;
+    padding: 1em .5em 0; margin: 0;
 
     img {
       display: block;
@@ -647,8 +647,6 @@ footer {
     }
     
     figure {
-      margin: 0;
-      padding: 1em .5em;
       vertical-align: top;
     }
   }
