@@ -43,7 +43,7 @@ Modernizr.html5please = function(opts){
     var ref = document.getElementsByTagName('script')[0];
     var url = 'http://api.html5please.com/' + features.join('+') + 
               '.json?callback=Modernizr.html5please.cb' +
-              opts.options ? ('&' + opts.options) : '';
+              (opts.options ? ('&' + opts.options) : '');
     script.src = url;
     ref.parentNode.insertBefore(script, ref);
 
