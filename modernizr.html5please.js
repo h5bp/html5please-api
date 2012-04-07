@@ -20,7 +20,7 @@
 Modernizr.html5please = function(opts){
     
     var passes = true;
-    var features = opts.features.split('+');
+    var features = opts.features.split(' ');
     var feat;
     for (var i = -1, len = features.length; ++i < len; ){
         feat = features[i];
