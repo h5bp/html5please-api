@@ -5,7 +5,7 @@
 		"type": "desktop",
 		"url": "http:\/\/www.microsoft.com\/windows\/internet-explorer\/",
 		"sniffer": "/msie[\\W\\w]*?([\\d\\.]+)/i",
-		"currentVersion": "9"
+		"currentVersion": "10"
 	},
 	"firefox": {
 		"name": "Firefox",
@@ -21,7 +21,7 @@
 		"type": "desktop",
 		"url": "http:\/\/www.google.com\/chrome",
 		"sniffer": "/chrome\\/([\\d\\.]+)/i",
-		"currentVersion": "22"
+		"currentVersion": "23"
 	},
 	"safari": {
 		"name": "Safari",
@@ -37,7 +37,7 @@
 		"type": "desktop",
 		"url": "http:\/\/www.opera.com\/",
 		"sniffer": "/opera[\\W\\w]*?version\\/([\\d\\.]+)|opera[\\W\\w]*?([\\d\\.]+)/i",
-		"currentVersion": "12"
+		"currentVersion": "12.10"
 	},
 	"ios_saf": {
 		"name": "iOS Safari",
