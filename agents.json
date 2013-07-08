@@ -37,7 +37,7 @@
 		"type": "desktop",
 		"url": "http:\/\/www.opera.com\/",
 		"sniffer": "/opera[\\W\\w]*?version\\/([\\d\\.]+)|opera[\\W\\w]*?([\\d\\.]+)/i",
-		"currentVersion": "12.15"
+		"currentVersion": "15"
 	},
 	"ios_saf": {
 		"name": "iOS Safari",
