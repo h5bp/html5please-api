@@ -21,7 +21,7 @@
 		"type": "desktop",
 		"url": "http:\/\/www.google.com\/chrome",
 		"sniffer": "/chrome\\/([\\d\\.]+)/i",
-		"currentVersion": "27"
+		"currentVersion": "28"
 	},
 	"safari": {
 		"name": "Safari",
@@ -61,7 +61,7 @@
 		"type": "mobile",
 		"url": "http:\/\/www.opera.com\/mobile\/",
 		"sniffer": "/opera\\s*mobi[\\W\\w]*?version\\/([\\d\\.]+)/i",
-		"currentVersion": "14"
+		"currentVersion": "15"
 	},
 	"android": {
 		"name": "Android Browser",
