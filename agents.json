@@ -13,7 +13,7 @@
 		"type": "desktop",
 		"url": "http:\/\/www.firefox.com\/",
 		"sniffer": "/firefox\\/([\\d\\.]+)/i",
-		"currentVersion": "22"
+		"currentVersion": "23"
 	},
 	"chrome": {
 		"name": "Chrome",
