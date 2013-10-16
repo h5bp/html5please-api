@@ -21,7 +21,7 @@
 		"type": "desktop",
 		"url": "http:\/\/www.google.com\/chrome",
 		"sniffer": "/chrome\\/([\\d\\.]+)/i",
-		"currentVersion": "29"
+		"currentVersion": "30"
 	},
 	"safari": {
 		"name": "Safari",
@@ -37,7 +37,7 @@
 		"type": "desktop",
 		"url": "http:\/\/www.opera.com\/",
 		"sniffer": "/opera[\\W\\w]*?version\\/([\\d\\.]+)|opera[\\W\\w]*?([\\d\\.]+)/i",
-		"currentVersion": "15"
+		"currentVersion": "17"
 	},
 	"ios_saf": {
 		"name": "iOS Safari",
@@ -61,7 +61,7 @@
 		"type": "mobile",
 		"url": "http:\/\/www.opera.com\/mobile\/",
 		"sniffer": "/opera\\s*mobi[\\W\\w]*?version\\/([\\d\\.]+)/i",
-		"currentVersion": "15"
+		"currentVersion": "16"
 	},
 	"android": {
 		"name": "Android Browser",
