@@ -117,7 +117,7 @@ $minorfocuscolor: hsl(61, 57%, 38%);
 
   &::before,
   &::after {
-    content: "✶";
+    content: "\2736";
     padding: 0 0.25em;
     color: $bgcolorlesscontrast;
     @include remfallback('font-size', 1);
@@ -628,7 +628,7 @@ footer {
       
       &:not(:first-of-type):nth-of-type(odd)::before,
       &:nth-of-type(odd)::after {
-        content: "✶";
+        content: "\2736";
       }
     }
   }
