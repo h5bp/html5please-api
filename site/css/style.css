@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* normalize.css 2011-07-06T20:20 UTC //github.com/jonathantneal/normalize.css */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block; }
@@ -162,9 +163,6 @@ table {
   font-size: 16px;
   font-size: 1rem; }
 
-footer .builders img {
-  width: 50px; }
-
 .align-center, h1, h2, #about, #toc, #in-action, #in-action h3, #get-api, label[for='features'], #how-does-it-work h4, #reference, footer {
   text-align: center; }
 
@@ -183,14 +181,14 @@ footer .builders img {
 .fancy-heading-star, h2, #toc a, #get-api h3, footer .builders h3 {
   color: #96982a;
   letter-spacing: 3px;
-  text-shadow: black 2px 2px 1px, #3c1816 3px 3px 1px; }
+  text-shadow: #000 2px 2px 1px, #3c1816 3px 3px 1px; }
   .fancy-heading-star::before, h2::before, #toc a::before, #get-api h3::before, footer .builders h3::before, .fancy-heading-star::after, h2::after, #toc a::after, #get-api h3::after, footer .builders h3::after {
-    content: "✶";
+    content: "\2736";
     padding: 0 0.25em;
     color: #5c5a72;
     font-size: 16px;
     font-size: 1rem;
-    text-shadow: black 2px 2px 1px, #3c1816 3px 3px 1px;
+    text-shadow: #000 2px 2px 1px, #3c1816 3px 3px 1px;
     vertical-align: middle; }
 
 * {
@@ -204,7 +202,7 @@ html {
   background: -ms-linear-gradient(left, rgba(6, 2, 49, 0.2), rgba(6, 2, 49, 0.2)), url("../classy_fabric.png");
   background: -o-linear-gradient(left, rgba(6, 2, 49, 0.2), rgba(6, 2, 49, 0.2)), url("../classy_fabric.png");
   color: #dabed1;
-  text-shadow: black 2px 2px 1px; }
+  text-shadow: #000 2px 2px 1px; }
 
 body {
   margin: 0 auto;
@@ -223,7 +221,7 @@ h1 {
   margin: 2em 0 1em 0; }
 
 h2 {
-  text-shadow: black 2px 2px 1px, #96982a 3px 3px 1px;
+  text-shadow: #000 2px 2px 1px, #96982a 3px 3px 1px;
   color: #dabed1;
   margin-bottom: 0; }
 
@@ -268,7 +266,7 @@ a {
 
 .logo b {
   letter-spacing: 4px;
-  text-shadow: black 2px 2px 1px, #b5abed 3px 3px 1px;
+  text-shadow: #000 2px 2px 1px, #b5abed 3px 3px 1px;
   color: #a55f8f; }
   .logo b::before, .logo b::after {
     content: "\2767";
@@ -287,7 +285,7 @@ a {
   font-size: 0.8rem;
   vertical-align: middle; }
   .logo .more-info::after {
-    content: " \00BB"; }
+    content: " »"; }
 
 #toc {
   width: 100%;
@@ -525,6 +523,8 @@ footer {
         display: block;
         font-weight: normal;
         margin-top: 0.5rem; }
+    footer .builders img {
+      width: 50px; }
   footer p {
     margin-top: 0; }
     footer p:last-child {
@@ -566,7 +566,7 @@ footer {
   #toc a {
     padding: .3em 0; }
     #toc a:not(:first-of-type):nth-of-type(odd)::before, #toc a:nth-of-type(odd)::after {
-      content: "✶"; }
+      content: "\2736"; }
 
   #nav_container {
     height: auto !important; }
@@ -856,3 +856,5 @@ footer {
 .ui-menu .ui-menu-item a::after,
 .ui-menu .ui-menu-item a::before {
   content: " "; }
+
+/*# sourceMappingURL=style.css.map */
